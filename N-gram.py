@@ -6,10 +6,10 @@ from typing import List
 from typing import Tuple
 from typing import Generator
 
-# Generator for all n-grams in text
+
 # n is a (non-negative) int
 # text is a list of strings
-# Yields n-gram tuples of the form (string, context), where context is a tuple of strings
+# Returns n-gram tuples of the form (string, context), where context is a tuple of strings
 def get_ngrams(n: int, text: List[str]):
     newText =  text[:]
     newText = ['<s>']*(n-1)+newText+['</s>']
