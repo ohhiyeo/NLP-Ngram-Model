@@ -10,7 +10,7 @@ from typing import Generator
 # n is a (non-negative) int
 # text is a list of strings
 # Yields n-gram tuples of the form (string, context), where context is a tuple of strings
-def get_ngrams(n: int, text: List[str]) -> Generator[Tuple[str, Tuple[str, ...]], None, None]:
+def get_ngrams(n: int, text: List[str]):
     newText =  text[:]
     newText = ['<s>']*(n-1)+newText+['</s>']
     ngrams = []
