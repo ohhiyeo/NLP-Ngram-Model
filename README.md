@@ -2,16 +2,16 @@ It is a very basic N-gram Model for TEXT.
 
 How to run:
 
-1. Make sure to install these 2 libraries:
-NLTK, https://www.nltk.org/
+1. Make sure to install these 2 libraries:  
+NLTK, https://www.nltk.org/  
 NLTK corpora, https://www.nltk.org/data.html
 
 2. This code runs on Python3.
 
-3. Arguments:
-The first argument takes in the corpus file. (The default setting is shakespeare.txt, warpiece.txt is also available in the repository)
-The second argument takes in the delta value for smoothing.
-The third argument takes in the random seed for text generation.
+3. Arguments:  
+The first argument takes in the corpus file. (The default setting is shakespeare.txt, warpiece.txt is also available in the repository)  
+The second argument takes in the delta value for smoothing.  
+The third argument takes in the random seed for text generation.  
 ```ruby
 parser.add_argument('corpus_path', nargs="?", type=str, default='shakespeare.txt', help='Path to corpus file')
 parser.add_argument('delta', nargs="?", type=float, default=.0, help='Delta value used for smoothing')
@@ -33,7 +33,7 @@ You can modify the test case as you wish.
 $ python3 N-gram.py
 ```
 
-The result will show:
-Sentence log probability for s1 (Double)
-Sentence log probability for s2 (Double)
-5 random generated sentences from the corpus (String)
+The result will show:  
+Sentence log probability for s1 (Double)  
+Sentence log probability for s2 (Double)  
+5 random generated sentences from the corpus (String)  
